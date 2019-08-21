@@ -40,16 +40,16 @@
 			<section id="html-css-js">
 				<h2>HTML</h2>
 						<ul>
-								<p>El <strong>HTML (Hypertext Markup Language)</strong> es el lenguaje de marcas (<em>tags</em>) estándar para la creación de páginas y aplicaciones en la Web.</p>
+								<p>El <strong>HTML (Hypertext Markup Language)</strong> es un lenguaje de marcas (<em>tags</em>) estándar para la creación de páginas y aplicaciones en la Web.</p>
 								<p>Junto con <strong>CSS (Cascading Style Sheets)</strong> y <strong>JavaScript</strong>, conforma el grupo de las tres tecnologías principales de la Web.</p>
-								<p>Fue creado en 1990 por el científico británico <strong>Tim Berners-Lee</strong>. La primera página web está aún disponible en <a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
+								<p>Fue creado en 1990 por el científico británico <strong>Tim Berners-Lee</strong>. La primera página html que hizo está aún disponible en <a href="http://info.cern.ch/">http://info.cern.ch/</a>.</p>
 						</ul>
 			</section>
 			<section id="html-estructura">
 				<h2>HTML</h2>
 						<ul>
 								<p>El HTML especifica la <strong>estructura</strong> y la <strong>semántica</strong> de una página web.</p>
-								<p>La <strong>presentación</strong> es especificada mediante <strong>CSS</strong> y la <strong>interactividad</strong> mediante el lenguaje <strong>JavaScript</strong>.</p>
+								<p>La <strong>presentación</strong> es definida mediante <strong>CSS</strong> y la <strong>interactividad</strong> mediante el lenguaje <strong>JavaScript</strong>.</p>
 								<p>Tanto HTML como CSS son estándares del <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>.</p>
 						</ul>
 			</section>
@@ -58,7 +58,7 @@
 						<ul>
 								<p>Su primera <a href="https://html.spec.whatwg.org/multipage/">especificación</a> fue publicada por el W3C en <strong>2014</strong>.</p>
 								<p><strong>Reduce la necesidad de complementos externos</strong> (ej. Flash) para el manejo de multimedia y otros recursos. Para esto, se apoya en CSS, JavaScript y en el <a href="https://en.wikipedia.org/wiki/Document_Object_Model">Document Object Model (DOM)</a>.</p>
-								<p>Se diseñó para funcionar en <strong>diferentes tipos de dipositivos</strong> (ej. computadoras, tabletas, teléfonos).</p>
+								<p>Se diseñó para funcionar en <strong>diferentes tipos de dispositivos</strong> (ej. computadoras, tabletas, teléfonos).</p>
 						</ul>
 			</section>
 			<section id="dom">
@@ -87,8 +87,8 @@
 			<section id="html-elementos">
 				<h2>Elementos de HTML</h2>
 						<ul>
-								<p>Son los componentes individuales de un documento HTML. <strong>Contienen tags, pero no son lo mismo</strong>.</p>
-								<p>Están compuestos de un <strong>tag inicial</strong>, un <strong>tag final</strong> (el cual opcional) y <strong>contenido</strong>. El tag final puede tener <strong>atributos</strong> especificados en la forma <em>nombre=valor</em>.</p>
+								<p>Son los componentes individuales de un documento HTML. <strong>Contienen <em>tags</em> (pero no son lo mismo).</strong>.</p>
+								<p>Están compuestos de un <strong><em>tag</em> inicial</strong>, un <strong><em>tag</em> final</strong> (el cual opcional) y <strong>contenido</strong>. El <em>tag</em> inicial puede tener <strong>atributos</strong> especificados en la forma <em>nombre=valor</em>.</p>
 								<p><figure><img src="https://upload.wikimedia.org/wikipedia/en/8/88/HTML_element_structure.png" alt="Elemento HTML"><figcaption><small>Ejemplo de elemento HTML. Fuente: Wikimedia</small></figcaption></figure></p>
 						</ul>
 			</section>
@@ -123,9 +123,9 @@
      </ul>
    </section>
 			<section id="html-doctype">
-				<h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">Doctype</a></h2>
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">DOCTYPE</a></h2>
 						<ul>
-								<p>Informa al navegador la versión de HTML (o XML) en la que está escrita en documento.</p>
+								<p>Informa al navegador la versión de HTML (o XML) en la que está escrita el documento.</p>
         <p>Es una declaración y <strong>no un elemento o <em>tag</em> HTML</strong>.</p>
         <p><strong>html</strong> es el valor correspondiente a HTML5.</p>
 						</ul>
@@ -136,7 +136,7 @@
 			<section id="html-html">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">html</a></h2>
 						<ul>
-								<p>Es la raíz de un documento HTML.</p>
+								<p>Es el elemento raíz de un documento HTML.</p>
         <p>Contiene el resto de los elementos del documento.</p>
 						</ul>
       <pre><code data-trim>
@@ -147,6 +147,117 @@
 &lt;/html&gt;
       </code></pre>
 			</section>
+			<section id="html-head">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></h2>
+						<ul>
+								<p>Contiene los metadatos del documento y también su título, <em>scripts</em> y hojas de estilo (CSS).</p>
+						</ul>
+      <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;T&iacute;tulo del documento&lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+      </code></pre>
+			</section>
+			<section id="html-title">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">title</a></h2>
+						<ul>
+								<p>Define el título del documento, el cual se muestra en la parte superior de la ventana o pestaña del navegador.</p>
+        <p>Solo puede contener texto, los <em>tags</em> son ignorados.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+      </code></pre>
+			</section>
+			<section id="html-meta">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">meta</a></h2>
+						<ul>
+								<p>Especifica metadatos del documento, tales como la descripción, el autor o el juego de caracteres, entre otros.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;Manuel Vargas&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Curso introductorio de programaci&oacute;n&quot;&gt;
+  &lt;meta name=&quot;keywords&quot; content=&quot;Python, programaci&oacute;n&quot;&gt;
+  &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+&lt;/head&gt;
+      </code></pre>
+			</section>
+			<section id="html-body">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">body</a></h2>
+						<ul>
+								<p>Especifica el contenido del documento (ej. texto, multimedia, hipervínculos).</p>
+						</ul>
+      <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Python es un lenguaje de programaci&oacute;n creado por Guido van Rossum...
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+			</section>
+			<section id="html-h">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h1 - h6</a></h2>
+						<ul>
+								<p>Representan seis niveles de encabezados en el cuerpo del documento. h1 es el encabezado de mayor nivel (con letras más grandes) y h6 el de menor nivel.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;body&gt;
+  &lt;h1&gt;El lenguaje Python&lt;/h1&gt;
+    &lt;h2&gt;Tipos de datos&lt;h2&gt;
+      &lt;h3&gt;Num&eacute;ricos&lt;/h3&gt;
+      &lt;h3&gt;Textuales&lt;/h3&gt;
+    &lt;h2&gt;Control de flujo&lt;h2&gt;
+      &lt;h3&gt;Condicionales&lt;/h3&gt;
+      &lt;h3&gt;Ciclos&lt;/h3&gt;
+&lt;/body&gt;
+      </code></pre>
+			</section>
+			<section id="html-p">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a></h2>
+						<ul>
+								<p>Se usa para representar un párrafo.</p>
+        <p>El <em>tag</em> final es opcional.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;body&gt;
+  &lt;p&gt;Python es un lenguaje de programaci&oacute;n de prop&oacute;sito general ...&lt;/p&gt;
+  &lt;p&gt;Fue creado en 1989 por Guido van Rossum...&lt;/p&gt;
+&lt;/body&gt;re>
+      </code></pre>
+			</section>
+			<section id="html-a">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a></h2>
+						<ul>
+								<p>Crea un hipervínculo a otro documento HTML, a un archivo, a una dirección de email o a cualquier otro tipo de <a href="https://en.wikipedia.org/wiki/URL">URL</a>.</p>
+        <p>El atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href">href</a> especifica el URL.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;body&gt;
+  &lt;a href=&quot;https://www.python.org/&quot;&gt;El lenguaje Python&lt;/a&gt;
+&lt;/body&gt;
+      </code></pre>
+			</section>
+			<section id="html-img">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a></h2>
+						<ul>
+								<p>Inserta una imagen en un documento. Este elemento se compone solo del <em>tag</em> inicial.</p>
+        <p>El atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#src">src</a> especifica el URL de la imagen y el atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt">alt</a> especifica una descripción textual de la imagen.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;img src=&quot;python-logo.jpg&quot; alt=&quot;Logo de Python&quot;&gt;
+      </code></pre>
+			</section>
+
 			</div>
 		</div>
 
@@ -158,6 +269,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+    history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
