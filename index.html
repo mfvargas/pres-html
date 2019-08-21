@@ -87,22 +87,18 @@
 			<section id="html-elementos">
 				<h2>Elementos de HTML</h2>
 						<ul>
-								<p>Son los componentes individuales de un documento HTML. <strong>Contienen <em>tags</em> (pero no son lo mismo).</strong>.</p>
-								<p>Están compuestos de un <strong><em>tag</em> inicial</strong>, un <strong><em>tag</em> final</strong> (el cual opcional) y <strong>contenido</strong>. El <em>tag</em> inicial puede tener <strong>atributos</strong> especificados en la forma <em>nombre=valor</em>.</p>
+								<p>Son los componentes individuales de un documento HTML. Están compuestos por un <strong><em>tag</em> inicial</strong>, <strong>contenido</strong> y un <strong><em>tag</em> final</strong>.</p>
 								<p><figure><img src="https://upload.wikimedia.org/wikipedia/en/8/88/HTML_element_structure.png" alt="Elemento HTML"><figcaption><small>Ejemplo de elemento HTML. Fuente: Wikimedia</small></figcaption></figure></p>
 						</ul>
 			</section>
 			<section id="html-elementos-2">
 				<h2>Estructura de un elemento HTML</h2>
-      <ul>
-        <p>Se compone de un <strong><em>tag</em> inicial</strong> (con atributos opcionales), <strong>contenido</strong> y un <strong><em>tag</em> final</strong>.</p>
-      </ul>
       <pre><code class="hljs" data-trim contenteditable>
 &lt;tag atrib1=&quot;valor1&quot; atrib2=&quot;valor2&quot;&gt;contenido&lt;/tag&gt;
       </code></pre>
       <ul>
         <p>Algunos elementos pueden no tener <em>tag</em> final ni contenido.</p>
-        <p>El valor de lo atributos se escribe siempre entre comillas dobles ("").</p>
+        <p>El valor de lo atributos se escribe siempre entre comillas dobles (""). Hay atributos particulares para cada elemento y también <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">atributos globales</a>.</p>
       </ul>
 			</section>
 			<section id="html-doc">
@@ -125,136 +121,214 @@
 			<section id="html-doctype">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">DOCTYPE</a></h2>
 						<ul>
-								<p>Informa al navegador la versión de HTML (o XML) en la que está escrita el documento.</p>
-        <p>Es una declaración y <strong>no un elemento o <em>tag</em> HTML</strong>.</p>
+								<p>Informa al navegador la <strong>versión de HTML (o XML)</strong> en la que está escrita el documento.</p>
+        <p>Es una declaración y no un elemento HTML.</p>
         <p><strong>html</strong> es el valor correspondiente a HTML5.</p>
 						</ul>
       <pre><code data-trim>
-&lt;!DOCTYPE html&gt;
+        &lt;!DOCTYPE html&gt;
       </code></pre>
 			</section>
 			<section id="html-html">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">html</a></h2>
 						<ul>
-								<p>Es el elemento raíz de un documento HTML.</p>
+								<p>Es el <strong>elemento raíz</strong> de un documento HTML.</p>
         <p>Contiene el resto de los elementos del documento.</p>
 						</ul>
       <pre><code data-trim>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;...&lt;/head&gt;
-  &lt;body&gt;...&lt;/body&gt;
-&lt;/html&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;...&lt;/head&gt;
+          &lt;body&gt;...&lt;/body&gt;
+        &lt;/html&gt;
       </code></pre>
 			</section>
 			<section id="html-head">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a></h2>
 						<ul>
-								<p>Contiene los metadatos del documento y también su título, <em>scripts</em> y hojas de estilo (CSS).</p>
+								<p>Contiene los <strong>metadatos del documento y otros elementos como su título, <em>scripts</em> y hojas de estilo (CSS)</strong>.</p>
 						</ul>
       <pre><code data-trim>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;T&iacute;tulo del documento&lt;/title&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;T&iacute;tulo del documento&lt;/title&gt;
+          &lt;/head&gt;
+        &lt;/html&gt;
       </code></pre>
 			</section>
 			<section id="html-title">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">title</a></h2>
 						<ul>
-								<p>Define el título del documento, el cual se muestra en la parte superior de la ventana o pestaña del navegador.</p>
+								<p>Define el <strong>título</strong> del documento, el cual se muestra en la parte superior de la ventana o pestaña del navegador.</p>
         <p>Solo puede contener texto, los <em>tags</em> son ignorados.</p>
 						</ul>
       <pre><code data-trim>
-&lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+        &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
       </code></pre>
 			</section>
 			<section id="html-meta">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">meta</a></h2>
 						<ul>
-								<p>Especifica metadatos del documento, tales como la descripción, el autor o el juego de caracteres, entre otros.</p>
+								<p>Especifica <strong>metadatos</strong> del documento, tales como la descripción, el autor o el juego de caracteres, entre otros.</p>
 						</ul>
       <pre><code data-trim>
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;author&quot; content=&quot;Manuel Vargas&quot;&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;Curso introductorio de programaci&oacute;n&quot;&gt;
-  &lt;meta name=&quot;keywords&quot; content=&quot;Python, programaci&oacute;n&quot;&gt;
-  &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
-&lt;/head&gt;
+        &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt;
+          &lt;meta name=&quot;author&quot; content=&quot;Manuel Vargas&quot;&gt;
+          &lt;meta name=&quot;description&quot; content=&quot;Curso introductorio de programaci&oacute;n&quot;&gt;
+          &lt;meta name=&quot;keywords&quot; content=&quot;Python, programaci&oacute;n&quot;&gt;
+          &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+        &lt;/head&gt;
       </code></pre>
 			</section>
 			<section id="html-body">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">body</a></h2>
 						<ul>
-								<p>Especifica el contenido del documento (ej. texto, multimedia, hipervínculos).</p>
+								<p>Especifica el <strong>contenido</strong> del documento (ej. texto, multimedia, hipervínculos).</p>
 						</ul>
       <pre><code data-trim>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    Python es un lenguaje de programaci&oacute;n creado por Guido van Rossum...
-  &lt;/body&gt;
-&lt;/html&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Curso de programaci&oacute;n en Python&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            Python es un lenguaje de programaci&oacute;n creado por Guido van Rossum...
+          &lt;/body&gt;
+        &lt;/html&gt;
       </code></pre>
 			</section>
 			<section id="html-h">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h1 - h6</a></h2>
 						<ul>
-								<p>Representan seis niveles de encabezados en el cuerpo del documento. h1 es el encabezado de mayor nivel (con letras más grandes) y h6 el de menor nivel.</p>
+								<p>Representan seis niveles de <strong>encabezados</strong> en el cuerpo del documento. h1 es el encabezado de mayor nivel (con letras más grandes) y h6 el de menor nivel.</p>
 						</ul>
       <pre><code data-trim>
-&lt;body&gt;
-  &lt;h1&gt;El lenguaje Python&lt;/h1&gt;
-    &lt;h2&gt;Tipos de datos&lt;h2&gt;
-      &lt;h3&gt;Num&eacute;ricos&lt;/h3&gt;
-      &lt;h3&gt;Textuales&lt;/h3&gt;
-    &lt;h2&gt;Control de flujo&lt;h2&gt;
-      &lt;h3&gt;Condicionales&lt;/h3&gt;
-      &lt;h3&gt;Ciclos&lt;/h3&gt;
-&lt;/body&gt;
+        &lt;body&gt;
+          &lt;h1&gt;El lenguaje Python&lt;/h1&gt;
+            &lt;h2&gt;Tipos de datos&lt;h2&gt;
+              &lt;h3&gt;Num&eacute;ricos&lt;/h3&gt;
+              &lt;h3&gt;Textuales&lt;/h3&gt;
+            &lt;h2&gt;Control de flujo&lt;h2&gt;
+              &lt;h3&gt;Condicionales&lt;/h3&gt;
+              &lt;h3&gt;Ciclos&lt;/h3&gt;
+        &lt;/body&gt;
       </code></pre>
 			</section>
 			<section id="html-p">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a></h2>
 						<ul>
-								<p>Se usa para representar un párrafo.</p>
+								<p>Se usa para representar un <strong>párrafo</strong>.</p>
         <p>El <em>tag</em> final es opcional.</p>
 						</ul>
       <pre><code data-trim>
-&lt;body&gt;
-  &lt;p&gt;Python es un lenguaje de programaci&oacute;n de prop&oacute;sito general ...&lt;/p&gt;
-  &lt;p&gt;Fue creado en 1989 por Guido van Rossum...&lt;/p&gt;
-&lt;/body&gt;re>
+        &lt;body&gt;
+          &lt;p&gt;Python es un lenguaje de programaci&oacute;n de prop&oacute;sito general ...&lt;/p&gt;
+          &lt;p&gt;Fue creado en 1989 por Guido van Rossum...&lt;/p&gt;
+        &lt;/body&gt;re>
       </code></pre>
 			</section>
 			<section id="html-a">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a></h2>
 						<ul>
-								<p>Crea un hipervínculo a otro documento HTML, a un archivo, a una dirección de email o a cualquier otro tipo de <a href="https://en.wikipedia.org/wiki/URL">URL</a>.</p>
+								<p>Crea un <strong>hipervínculo</strong> a otro documento HTML, a un archivo, a una dirección de email o a cualquier otro tipo de <a href="https://en.wikipedia.org/wiki/URL">URL (Uniform Resource Locator)</a>.</p>
         <p>El atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href">href</a> especifica el URL.</p>
 						</ul>
       <pre><code data-trim>
-&lt;body&gt;
-  &lt;a href=&quot;https://www.python.org/&quot;&gt;El lenguaje Python&lt;/a&gt;
-&lt;/body&gt;
+        &lt;body&gt;
+          &lt;a href=&quot;https://www.python.org/&quot;&gt;El lenguaje Python&lt;/a&gt;
+        &lt;/body&gt;
       </code></pre>
 			</section>
 			<section id="html-img">
 				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a></h2>
 						<ul>
-								<p>Inserta una imagen en un documento. Este elemento se compone solo del <em>tag</em> inicial.</p>
-        <p>El atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#src">src</a> especifica el URL de la imagen y el atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt">alt</a> especifica una descripción textual de la imagen.</p>
+								<p>Inserta una <strong>imagen</strong> en un documento. Este elemento se compone solo del <em>tag</em> inicial.</p>
+        <p>El atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#src">src</a> especifica el URL de la imagen y el atributo <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#alt">alt</a> una descripción textual de la imagen.</p>
 						</ul>
       <pre><code data-trim>
-&lt;img src=&quot;python-logo.jpg&quot; alt=&quot;Logo de Python&quot;&gt;
+        &lt;img src=&quot;python-logo.jpg&quot; alt=&quot;Logo de Python&quot;&gt;
+      </code></pre>
+			</section>
+			<section id="html-ul">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a></h2>
+						<ul>
+								<p>Define una <strong>lista no ordenada</strong> cuyos elementos se especifican mediante el elemento <a href="">li</a> (list item).</p>
+						</ul>
+      <pre><code data-trim>
+        Lista de compras:
+        &lt;ul&gt;
+          &lt;li&gt;Az&uacute;car&lt;/li&gt;
+          &lt;li&gt;Harina&lt;/li&gt;
+          &lt;li&gt;Limones&lt;/li&gt;
+          &lt;li&gt;Arroz&lt;/li&gt;
+        &lt;/ul&gt;
+      </code></pre>
+			</section>
+			<section id="html-ol">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a></h2>
+						<ul>
+								<p>Define una <strong>lista ordenada</strong> cuyos elementos se especifican mediante el elemento <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a> (list item).</p>
+						</ul>
+      <pre><code data-trim>
+        Lista de compras:
+        &lt;ol&gt;
+          &lt;li&gt;Az&uacute;car&lt;/li&gt;
+          &lt;li&gt;Harina&lt;/li&gt;
+          &lt;li&gt;Limones&lt;/li&gt;
+          &lt;li&gt;Arroz&lt;/li&gt;
+        &lt;/ul&gt;
+      </code></pre>
+			</section>
+			<section id="html-table">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a></h2>
+						<ul>
+								<p>Se utiliza para presentar <strong>datos en filas y columnas</strong>.</p>
+        <p>Los elementos <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead">thead</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">tbody</a> especifican el encabezado y el cuerpo de la tabla, respectivamente.
+        <p>El elemento <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">tr</a> especifica las filas y <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td">td</a> las columnas o las celdas. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th">th</a> se usa en las celdas de los encabezados.
+						</ul>
+			</section>
+			<section id="html-table-2">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a></h2>
+      <pre><code data-trim>
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th colspan=&quot;2&quot;&gt;Encabezado de la tabla&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Fila 1,columna 1&lt;/td&gt;&lt;td&gt;Fila 1,columna 2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Fila 2,columna 1&lt;/td&gt;&lt;td&gt;Fila 2,columna 2&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      </code></pre>
+			</section>
+			<section id="html-strong">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong</a></h2>
+						<ul>
+								<p>Denota la <strong>importancia</strong> de una parte del texto.</p>
+        <p>Los navegadores acostumbran usar letra en negrita para implementar este elemento.</p>
+						</ul>
+      <pre><code data-trim>
+        &lt;p&gt;Esta parte de la oraci&oacute;n es la &lt;strong&gt;m&aacute;s importante&lt;/strong&gt;.&lt;/p&gt;
+      </code></pre>
+			</section>
+			<section id="html-strong">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">em</a></h2>
+						<ul>
+								<p>Se utiliza para denotar <strong>énfasis</strong> en una parte del texto.</p>
+        <p>Los navegadores acostumbran usar letra en itálica para implementar este elemento.</p>
+						</ul>
+      <pre><code data-trim>
+        &lt;p&gt;As&iacute; se denota &lt;em&gt;&eacute;nfasis&lt;/em&gt; en una palabra.&lt;/p&gt;
       </code></pre>
 			</section>
 
