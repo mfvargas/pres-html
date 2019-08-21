@@ -42,14 +42,14 @@
 						<ul>
 								<p>El <strong>HTML (Hypertext Markup Language)</strong> es el lenguaje de marcas (<em>tags</em>) estándar para la creación de páginas y aplicaciones en la Web.</p>
 								<p>Junto con <strong>CSS (Cascading Style Sheets)</strong> y <strong>JavaScript</strong>, conforma el grupo de las tres tecnologías principales de la Web.</p>
-								<p>Fue creado en 1990 por el científico británico <strong>Tim Berners-Lee</strong>. La <strong>primera página web</strong> está aún disponible en <a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
+								<p>Fue creado en 1990 por el científico británico <strong>Tim Berners-Lee</strong>. La primera página web está aún disponible en <a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
 						</ul>
 			</section>
 			<section id="html-estructura">
 				<h2>HTML</h2>
 						<ul>
 								<p>El HTML especifica la <strong>estructura</strong> y la <strong>semántica</strong> de una página web.</p>
-								<p>La <strong>presentación</strong> es especificada mediante <strong>CSS</strong> y la <strong>interactividad</strong> mediante <strong>JavaScript</strong>.</p>
+								<p>La <strong>presentación</strong> es especificada mediante <strong>CSS</strong> y la <strong>interactividad</strong> mediante el lenguaje <strong>JavaScript</strong>.</p>
 								<p>Tanto HTML como CSS son estándares del <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a>.</p>
 						</ul>
 			</section>
@@ -72,13 +72,14 @@
 						<ul>
 								<pre><code class="hljs" data-trim contenteditable>
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título del documento HTML&lt;/title&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contenido del documento HTML
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;T&iacute;tulo del documento&lt;/title&gt;     
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Contenido del documento --&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 								</code></pre>
 						</ul>
@@ -93,6 +94,16 @@
 			</section>
 			<section id="html-elementos-2">
 				<h2>Estructura de un elemento HTML</h2>
+      <ul>
+        <p>Se compone de un <strong><em>tag</em> inicial</strong> (con atributos opcionales), <strong>contenido</strong> y un <strong><em>tag</em> final</strong>.</p>
+      </ul>
+      <pre><code class="hljs" data-trim contenteditable>
+&lt;tag atrib1=&quot;valor1&quot; atrib2=&quot;valor2&quot;&gt;contenido&lt;/tag&gt;
+      </code></pre>
+      <ul>
+        <p>Algunos elementos pueden no tener <em>tag</em> final ni contenido.</p>
+        <p>El valor de lo atributos se escribe siempre entre comillas dobles ("").</p>
+      </ul>
 			</section>
 			<section id="html-doc">
 				<h2>Documentación sobre los elementos de HTML</h2>
@@ -103,7 +114,39 @@
 									<li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
 								</ul>
 						</ul>
-			</section>				
+			</section>
+   <section id="html-elementos-principales">
+     <h2>Principales elementos HTML</h2>
+     <ul>
+       <p>A continuación, se describen y se ejemplifican algunos de los principales elementos de HTML.</p>
+       <p>En el título de cada diapositiva, se proporciona un enlace a la documentación del elemento en MDN.</p>
+     </ul>
+   </section>
+			<section id="html-doctype">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">Doctype</a></h2>
+						<ul>
+								<p>Informa al navegador la versión de HTML (o XML) en la que está escrita en documento.</p>
+        <p>Es una declaración y <strong>no un elemento o <em>tag</em> HTML</strong>.</p>
+        <p><strong>html</strong> es el valor correspondiente a HTML5.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+      </code></pre>
+			</section>
+			<section id="html-html">
+				<h2><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">html</a></h2>
+						<ul>
+								<p>Es la raíz de un documento HTML.</p>
+        <p>Contiene el resto de los elementos del documento.</p>
+						</ul>
+      <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+			</section>
 			</div>
 		</div>
 
